@@ -17,7 +17,7 @@
 
 ### 1. Python のバージョンを確認
 
-Python 3.12.12 で動かす想定です。
+Python 3.12系で動かす想定です。手元では Python 3.12.4 と pygame 2.6.1 の組み合わせで動作確認しています。
 
 ```powershell
 py -3.12 --version
@@ -29,7 +29,7 @@ py -3.12 --version
 python --version
 ```
 
-`Python 3.12.12` のように表示されればOKです。
+`Python 3.12.x` のように表示されればOKです。
 
 ### 2. プロジェクトフォルダへ移動
 
@@ -43,7 +43,7 @@ cd C:\Work\Development\mineGitHub\side-hobby-sunwheel-loop
 py -3.12 -m venv .venv
 ```
 
-`py -3.12` が使えない場合は、Python 3.12.12 が既定の `python` として使える状態で次を実行してください。
+`py -3.12` が使えない場合は、Python 3.12系が既定の `python` として使える状態で次を実行してください。
 
 ```powershell
 python -m venv .venv
@@ -67,7 +67,7 @@ Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 ### 5. pygame をインストール
 
 ```powershell
-python -m pip install --upgrade pip
+python -m pip install --upgrade pip setuptools wheel
 python -m pip install -r requirements.txt
 ```
 
